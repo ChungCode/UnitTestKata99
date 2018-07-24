@@ -44,4 +44,14 @@ class UnitTest99Tests: XCTestCase {
             XCTAssert(false, "不應該出現")
         }
     }
+    
+    func testRandomTenInput() {
+        do {
+            var OutPutNum = Int((arc4random()%100)+10)
+            OutPutNum =  game.InputNum(of: 0)
+            XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
+        } catch {
+            XCTAssert(false, "不應該出現")
+        }
+    }
 }
