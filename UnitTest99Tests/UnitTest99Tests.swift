@@ -34,4 +34,14 @@ class UnitTest99Tests: XCTestCase {
             XCTAssert(false, "不應該出現")
         }
     }
+    
+    func testZerOInput() {
+        do {
+            var OutPutNum = 0;
+            OutPutNum =  game.InputNum(of: 0)
+            XCTAssert(OutPutNum == 10, "您輸入數字為 \(OutPutNum)")
+        } catch {
+            XCTAssert(false, "不應該出現")
+        }
+    }
 }
