@@ -13,6 +13,8 @@
 		54E4755921071DE2008EF11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E4755821071DE2008EF11D /* Assets.xcassets */; };
 		54E4755C21071DE2008EF11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E4755A21071DE2008EF11D /* LaunchScreen.storyboard */; };
 		54E4756721071DE2008EF11D /* UnitTest99Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4756621071DE2008EF11D /* UnitTest99Tests.swift */; };
+		54E475722107202B008EF11D /* C99Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E475712107202B008EF11D /* C99Game.swift */; };
+		54E475732107202B008EF11D /* C99Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E475712107202B008EF11D /* C99Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		54E4756221071DE2008EF11D /* UnitTest99Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest99Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E4756621071DE2008EF11D /* UnitTest99Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest99Tests.swift; sourceTree = "<group>"; };
 		54E4756821071DE2008EF11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E475712107202B008EF11D /* C99Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C99Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		54E4755021071DE0008EF11D /* UnitTest99 */ = {
 			isa = PBXGroup;
 			children = (
+				54E475712107202B008EF11D /* C99Game.swift */,
 				54E4755121071DE1008EF11D /* AppDelegate.swift */,
 				54E4755321071DE1008EF11D /* ViewController.swift */,
 				54E4755521071DE1008EF11D /* Main.storyboard */,
@@ -198,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E4755421071DE1008EF11D /* ViewController.swift in Sources */,
+				54E475722107202B008EF11D /* C99Game.swift in Sources */,
 				54E4755221071DE1008EF11D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E4756721071DE2008EF11D /* UnitTest99Tests.swift in Sources */,
+				54E475732107202B008EF11D /* C99Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

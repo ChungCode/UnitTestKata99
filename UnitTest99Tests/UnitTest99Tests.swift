@@ -7,13 +7,17 @@
 //
 
 import XCTest
-@testable import UnitTest99
+import UnitTest99
 
 class UnitTest99Tests: XCTestCase {
+    
+    var game: C99Game!
+
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        game = C99Game()
     }
     
     override func tearDown() {
@@ -21,16 +25,13 @@ class UnitTest99Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testOneInput() {
+        do {
+            var OutPutNum = 0;
+            OutPutNum =  game.InputNum(of: 1)
+            XCTAssert(OutPutNum == 1, "您輸入數字為 \(OutPutNum)")
+        } catch {
+            XCTAssert(false, "不應該出現")
         }
     }
-    
 }
