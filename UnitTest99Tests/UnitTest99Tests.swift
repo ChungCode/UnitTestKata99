@@ -48,7 +48,7 @@ class UnitTest99Tests: XCTestCase {
     func testRandomTenInput() {
         do {
             var OutPutNum = Int((arc4random()%100)+10)
-            OutPutNum =  game.InputNum(of: 0)
+            OutPutNum =  game.InputNum(of: OutPutNum)
             XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
         } catch {
             XCTAssert(false, "不應該出現")
@@ -58,7 +58,17 @@ class UnitTest99Tests: XCTestCase {
     func testRandomInput() {
         do {
             var OutPutNum = Int((arc4random()%9)+1)
-            OutPutNum =  game.InputNum(of: 0)
+            OutPutNum =  game.InputNum(of: OutPutNum)
+            XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
+        } catch {
+            XCTAssert(false, "不應該出現")
+        }
+    }
+    
+    func testRandom99Input() {
+        do {
+            var OutPutNum = Int((arc4random()%99)+1)
+            OutPutNum =  game.InputNum(of: OutPutNum)
             XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
         } catch {
             XCTAssert(false, "不應該出現")

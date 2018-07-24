@@ -15,4 +15,11 @@ class C99Game {
         }
         return num
     }
+    
+    func InputNum99(of num: Int) -> Int {
+        if num > 99 || num < 1 {
+            return -1
+        }
+        return num
+    }
 }
