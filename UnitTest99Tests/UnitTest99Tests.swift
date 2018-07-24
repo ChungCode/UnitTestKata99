@@ -68,7 +68,7 @@ class UnitTest99Tests: XCTestCase {
     func testRandom99Input() {
         do {
             var OutPutNum = Int((arc4random()%99)+1)
-            OutPutNum =  game.InputNum(of: OutPutNum)
+            OutPutNum =  game.InputNum99(of: OutPutNum)
             XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
         } catch {
             XCTAssert(false, "不應該出現")
