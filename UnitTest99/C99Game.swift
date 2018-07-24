@@ -10,6 +10,9 @@ import Foundation
 
 class C99Game {
     func InputNum(of num: Int) -> Int {
+        if num > 10 || num < 1 {
+                return -1
+        }
         return num
     }
 }

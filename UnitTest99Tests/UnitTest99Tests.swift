@@ -39,7 +39,7 @@ class UnitTest99Tests: XCTestCase {
         do {
             var OutPutNum = 0;
             OutPutNum =  game.InputNum(of: 0)
-            XCTAssert(OutPutNum == 10, "您輸入數字為 \(OutPutNum)")
+            XCTAssert(OutPutNum == -1, "輸入數字並非為系統要求 \(OutPutNum)")
         } catch {
             XCTAssert(false, "不應該出現")
         }
